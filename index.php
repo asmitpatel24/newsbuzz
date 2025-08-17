@@ -73,7 +73,7 @@ tailwind.config = {
           $imgPath = !empty($slide['image']) ? 'images/'.$slide['image'] : 'images/default.jpg';
           echo '
           <div class="relative rounded-lg overflow-hidden">
-            <img src="'.$imgPath.'" class="w-full h-64 object-cover">
+            <img src="'image'" class="w-full h-64 object-cover">
             <div class="absolute bottom-0 left-0 bg-black bg-opacity-50 w-full p-4 text-white">
               <p class="font-semibold">'.$slide['title'].'</p>
             </div>
@@ -94,7 +94,7 @@ tailwind.config = {
         $imgPath = 'uploads/default.jpg';
         echo '
         <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300">
-          <img src="'.$imgPath.'" class="w-full h-48 object-cover">
+          <img src="'.$row["image"]'" class="w-full h-48 object-cover">
           <div class="p-4">
             <p class="text-gray-800 font-medium">'.$row['title'].'</p>
           </div>
